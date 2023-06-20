@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEA - Projeto</title>
+    <link rel="stylesheet" href="./assets//css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <!--HEADER -->
+    <header class="nav-container">
+        <div class="logotipo">
+            <a href="/"><img src="./assets/img/infan TEA.png" alt=""></a>
+        </div>
+        <div class="hamburguer">
+
+        </div>
+        <div class="nav">
+            <ul class="nav-ul">
+                <a href="./autismo.html">autismo</a>
+                <a href="./servicos.html">serviços</a>
+                <a href="./relatos.html">relatos</a>
+                 <a href="./consulta.html">contate</a>
+            </ul>
+        </div>
+    </header>
+    <section class="contate-nos">
+        <div class="contate-container fadeInLeft" data-anime="350">
+            <h2>Contate-nos</h2>
+            <p>Agende mesmo uma consulta gratuitamente e comece o tratamento logo após o diagnostico
+            </p>
+        </div>
+        
+    <div class="contate-form">
+        <!--PACIENTE OU CONTRATAR-->
+        <div class="dropdown fadeInDown" data-anime="400">
+            <h3>Escolha uma das opcções abaixo</h3>
+            <div class="select">
+                <span class="selected">Paciente</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li class="contratar">Contratar</li>
+                <li class="paciente">Paciente</li>
+            </ul>
+        </div>
+        <!--form de contrate-->
+        <div class="form-cont-padrao contratar-container hidden">
+           <label for="">INSIRA SEU NOME:</label>
+           <input type="text" name="nome" placeholder="INSIRA SEU NOME" class="nomeContrate">
+           <label for="">EMAIL:</label>
+           <input type="email" name="email" placeholder="INSIRA SEU EMAIL DE CONTATO" class="email">
+           <label for="">TELEFONE:</label>
+           <input type="telefone" name="telefone" placeholder="INSIRA SEU MELHOR NUMERO" class="telefone">
+           <label class="askingInput" for="">PRIMEIRA VEZ TRABALHANDO NESSA AREA?</label>
+           
+         <div class="inputsRadio">
+            <input class="radioNormal" type="radio" id="opcao1" name="opcoes">
+            <label for="opcao1">SIM</label>
+            <input class="radioNormal" type="radio" id="opcao2" name="opcoes">
+            <label for="opcao2">NÃO</label>
+         </div>
+
+                        <!--QUAL CARDO DESEJA OCUPAR? FONOAUDIOLOGO, PSICOLOGO OU EDUCADOR-->
+                    <div class="dropdown opcoesContrate">
+                        <h3>Escolha uma das opcções abaixo</h3>
+                        <div class="select">
+                            <span class="selected">Fonoaudiologo</span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu">
+                            <li>Psicologo</li>
+                            <li>educador</li>
+                            <li class="active">Fonoaudiologo</li>
+                        </ul>
+                    </div>
+
+                <button class="btnBlue btnEnviarInfo">enviar</button>
+        </div>
+
+        <!--form de paciente-->
+        <div class="form-cont-padrao paciente-cons-container hidden">
+            <label for="">NOME DO PACIENTE:</label>
+            <input class="nomePaciente" type="text" name="nome" placeholder="INSIRA O NOME DO PACIENTE">
+            <label for="">NOME DO RESPONSAVEL:</label>
+            <input class="nomeResponsavel" type="text" name="nome" placeholder="INSIRA O NOME DO RESPONSAVEL">
+            <label for="">EMAIL:</label>
+            <input class="email" type="email" name="email" placeholder="INSIRA SEU EMAIL DE CONTATO">
+            <label for="">TELEFONE:</label>
+            <input class="telefone" type="telefone" name="telefone" placeholder="INSIRA SEU MELHOR NUMERO">
+            <label class="askingInput" for="">É SUA PRIMEIRA CONSULTA?</label>
+            
+          <div class="inputsRadio">
+             <input class="radioNormal" type="radio" id="opcao3" name="opcoes">
+             <label for="opcao3">SIM</label>
+             <input class="radioNormal" type="radio" id="opcao4" name="opcoes">
+             <label for="opcao4">NÃO</label>
+          </div>
+
+                    <!--CONSULTA ONLINE OU PRESENCIAL-->
+                <div class="dropdown opcoesContrate">
+                    <h3>Escolha uma das opcções abaixo</h3>
+                    <div class="select">
+                        <span class="selected">Online</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>Presencial</li>
+                        <li class="active">Online</li>
+                    </ul>
+                </div>
+ 
+                 <button class="btnBlue btnEnviarInfo">enviar</button>
+         </div>
+
+
+    </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="footer-cont">
+            <div class="logo">
+                <img src="./assets/img/infan TEA.png" alt="logotipo">
+            </div>
+            <h4>CNPJ: 12.121.222/0001-12</h4>
+        </div>
+    </footer>
+    <div class="overlay ativarOvl"></div>
+    <script src="./script/plugins/simple-anime.js"></script>
+    <script type="module" src="./script/index.js"></script>
+</body>
+</html>

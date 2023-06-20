@@ -1,0 +1,226 @@
+.autismo-container {
+    padding-top: 90px !important;
+}
+
+.autismo-container, .hiperfoco-sec, .adir-autismo {
+    padding: 0px 52px;
+}
+.autismo-container h3, .hiper-cont h3, .adir-container h3 {
+    padding-top: 32px;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0.15px;
+    color: var(--cor-p8);
+    text-transform: uppercase;
+}
+.autismo-container p, .hiper-cont p, .adir-container p {
+    font-size: 15px;
+    letter-spacing: .11px;
+    font-weight: 600;
+    color: var(--cor-c8);
+}
+.hiperfoco-sec h4 {
+    padding-top: 32px;
+    font-weight: 600;
+    font-size: 21px;
+    letter-spacing: 0.15px;
+    color: var(--cor-p8);
+    text-transform: uppercase;
+}
+
+.pcardBlue {
+    background-color: var(--cor-p4);
+}
+
+.pcardBlue p {
+    border-bottom: 2px solid var(--cor-p2);
+    color: var(--cor-c10);
+    padding-bottom: 12px;
+}
+.pcardBlue h3 {
+    color: var(--cor-p8);
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.btnRed {
+    background-color: var(--cor-s4) !important;
+    color: var(--cor-c1);
+    cursor: pointer;
+}
+.btnReadSRVC {
+    text-align: center !important;
+
+}
+
+.autismo-infancia {
+    background-color: var(--cor-s1);
+    /* max-width: 320; */
+}
+.three-resumos-autismo {
+    padding: 12px 74px;
+}
+
+.autismoInf-container h3 {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0.25px;
+    color: var(--cor-s5);
+}
+.autismoInf-container p {
+    font-size: 16px;
+    letter-spacing: -1%;
+    color: var(--cor-c2);
+    padding: 0px 32px;
+}
+
+.waveRed img {
+    width: 100%;
+}
+.card-resumo {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 32px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-txt h3 {
+    font-size: 17px;
+    letter-spacing: 0.15px;
+    color: var(--cor-s5);
+}
+.card-txt p {
+    font-size: 15px;
+    letter-spacing: -1.1%;
+    color: var(--cor-c1);
+}
+.cuidado-autismo {
+    background-color: var(--cor-t1);
+}
+.cuidado-container h3 {
+    text-align: center;
+    font-size: 21px;
+    letter-spacing: 0.15px;
+    font-weight: 600;
+    color: var(--cor-c10);
+    padding-bottom: 42px;
+}
+.cuidado-container p {
+    font-size: 16;
+    letter-spacing: 0.15px;
+    font-weight: 600;
+    color: var(--cor-c10);
+    padding: 0px 62px;
+    padding-bottom: 42px;
+}
+
+.cuidado-autismo img {
+    width: 100%;
+}
+.card-resumo-m {
+    display: none;
+}
+
+.consulta h4 {
+    font-size: 21px;
+    letter-spacing: .15px;
+    font-weight: 600;
+    color: var(--cor-p8);
+}
+.btnConsulta {
+    margin-top: 32px;
+    margin-bottom: 42px;
+    cursor: pointer;
+} 
+.yelloWave {
+    display: block;
+}
+.title-autism-infancia {
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 0.15px;
+    color: var(--cor-s5);
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/*MOBILE*/
+@media(max-width: 600px) {
+    .autismo-container,  .adir-autismo, .hiperfoco-sec{
+        padding: 0px;
+        margin: 14px;
+    }
+    .autismo-container h3,  .adir-autismo h3, .hiperfoco-sec h3{
+        font-size: 25px;
+    }
+    .autismo-container p,  .adir-autismo p, .hiperfoco-sec p {
+        font-size: 15px;
+        letter-spacing: 0.11px;
+    }
+    .autismo-infancia {
+        padding: 0px;
+    }
+    .card-resumo {
+        flex-direction: column;
+        padding: 0px;
+        justify-content: start;
+        align-items: start;
+        margin: 0px;
+        gap: 0px;
+        padding-bottom: 52px;
+    }
+    .autismoInf-container {
+        padding-bottom: 42px;
+    }
+    .crd-rs {
+        display: none;
+    }
+    .card-resumo-m {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-txt {
+        padding: 0px;
+        margin: 0px;
+    }
+    .three-resumos-autismo {
+        padding: 0px;
+        margin: 0px 14px;
+    }
+    .card-resumo img {
+        display: block;
+    }
+    .card-txt p {
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.11px;
+        color: var(--cor-c1);
+    }
+    .cuidado-container{
+        padding: 0px;
+        margin: 14px;
+    }
+    .cuidado-container p {
+        padding: 0px;
+    }
+    .paciente-cards {
+        margin-left: 12px;
+    }
+    .p-card {
+        padding: 14px;
+    }
+    .paciente-cards {
+        padding: 0px;
+        margin: 12px;
+    }
+    .pcardBlue, .pcardYellow {
+        width: 350px;
+    }
+}
+@media(max-width: 400px) {
+    .card-resumo img {
+        width: 98%;
+    }
+}

@@ -1,0 +1,8 @@
+@import url('./utilidades/cores.css');
+@import url('./main.css');
+
+@import url('./home/home.css');
+@import url('./autismo/autismo.css');
+@import url('./servico/servico.css');
+@import url('./relatos/relatos.css');
+@import url('./consulta/consulta.css');

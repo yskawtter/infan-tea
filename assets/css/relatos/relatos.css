@@ -1,0 +1,122 @@
+.relatos {
+    padding-top: 45px;
+}
+.relatos div h2 {
+    color: var(--cor-p8);
+    font-size: 34px;
+    letter-spacing: 0.25px;
+    font-weight: normal;
+}
+.relatos div p {
+    color: var(--cor-c8);
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    padding-bottom: 32px;
+}
+.relatos-container{
+    padding: 22px 52px;
+}
+.veja-relatos {
+    padding: 90px 52px;
+}
+
+.relatos-review {
+    background-color: var(--cor-t1);
+}
+.yellow-wave img {
+    width: 100%;
+}
+.card-relato {
+    background-color: var(--cor-t2);
+    border: 1px solid black;
+    max-width: 550px;
+    gap: 12px;
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.img-name {
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-name img {
+    padding: 0px 24px;
+}
+.relatos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.relatos-review h2 {
+    text-align: center;
+    color: var(--cor-t5) !important;
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+}
+.img-name p {
+    color: var(--cor-c9);
+    font-size: 12px;
+    letter-spacing: 1.6px;
+}
+.text-avaliacao h3 {
+    color: var(--cor-c10);
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.15px;
+    font-weight: normal;
+}
+.text-avaliacao p {
+    color: var(--cor-c9);
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 0.15px;
+}
+.relatos-consulta {
+    padding: 40px 52px;
+}
+/*MOBILE*/
+@media(max-width: 600px) {
+    .veja-relatos, .relatos-consulta {
+        padding: 0px;
+        margin: 14px;
+    }
+    .card-relato  {
+        flex-direction: column;
+    }
+    .relatos-container {
+        grid-template-columns: 1fr;
+    }
+    .img-name p {
+        padding-top: 14px !important;
+        margin: 0px;
+    }
+    .relatos div p {
+        padding: 0px;
+    }
+    .relatos-consulta h2 {
+        font-size: 21px !important;
+        font-weight: 600;
+        letter-spacing: 0.15px;
+    }
+    .relatos-consulta p {
+        font-size: 15px !important;
+        font-weight: 600;
+        letter-spacing: 0.11px;
+    }
+    .relatos-consulta a {
+        margin-top: 12px !important;
+        padding: 12px;
+    }
+    
+}

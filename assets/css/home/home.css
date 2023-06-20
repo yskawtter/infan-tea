@@ -1,0 +1,511 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 62px;
+    background-color: var(--cor-p1);
+}
+.nav-ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 12px;
+}
+.nav-ul a {
+    padding: 6px;
+    background-color: transparent;
+    letter-spacing: 0.15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--cor-p8);
+    cursor: pointer;
+    transition: .3s;
+}
+.nav-ul a:hover {
+    background-color: var(--cor-p2);
+    border-radius: 4px;
+}
+.logotipo {
+    cursor: pointer;
+}
+
+
+/*BACKGROUND IMG*/ 
+
+/*CONSERTAR ESSA MERDA NO RESPONSIVO (NOME NO CASO)*/
+.img-background {
+    background-image: url('../../img/bg-big-main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+}
+.img-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    margin-left: 34px;
+}
+.img-text h1 {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    font-size: 51px;
+    color: var(--cor-p1);
+    font-weight: normal;
+    max-width: 700px;
+    padding-bottom: 22px;
+}
+.img-text p {
+    max-width: 900px;
+    color: var(--cor-c3);
+    font-size: 16px;
+    letter-spacing: 0.15px;
+    padding-bottom: 64px;
+}
+.img-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.btnOne {
+    background-color: var(--cor-p1);
+    padding: 22px 42px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    color:var(--cor-p8);
+    font-size: 15px;
+    letter-spacing: 1.25px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.btnTwo {
+    border: 2px solid var(--cor-p1);
+    padding: 22px 42px;
+    color: var(--cor-p1);
+    background-color: transparent;
+    font-size: 15px;
+    letter-spacing: 1.25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*NOSSA CLINICA*/
+.clinica-texto {
+    margin-left: 62px;
+}
+.clinica-texto h2 {
+    font-size: 36px;
+    letter-spacing: 0.25px;
+    font-weight: normal;
+    color: var(--cor-p8);
+}
+.clinica-texto p {
+    font-size: 17px;
+    letter-spacing: .5px;
+    color: var(--cor-c8);
+    padding-bottom: 64px;
+} 
+.clinica-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 48px;
+    justify-content: space-between;
+}
+.card {
+    padding: 16px;
+}
+.card h3 {
+    font-size: 30px;
+    letter-spacing: 0.25px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.card p {
+    font-weight: normal;
+    font-size: 17px;
+    color: var(--cor-c10);
+}
+.cardBlue {
+    border: 1px solid var(--cor-p8);
+}
+.cardBlue h3 {
+    color: var(--cor-p8);
+}
+.cardRed {
+    border: 1px solid var(--cor-s1);
+}
+.cardRed h3 {
+    color: var(--cor-s1);
+}
+.cardYellow {
+    border: 1px solid var(--cor-t5);
+}
+.cardYellow h3 {
+    color: var(--cor-t5);
+}
+
+
+/*AJUDAMOS PACIENTES*/
+.paciente-text {
+    padding-left: 62px;
+}
+.paciente-text h2 {
+    color: var(--cor-p8);
+    font-size: 30px;
+    letter-spacing: 0.25px;
+    font-weight: normal;
+}
+
+.paciente-text p {
+    font-weight: normal;
+    font-size: 17px;
+    color: var(--cor-c10);
+}
+.paciente-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 12px;
+    padding: 0px 76px;
+}
+.al {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.p-card {
+    max-width: 600px;
+    padding: 14px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.p-card p {
+    font-size: 13px;
+    letter-spacing: .4px;
+    font-weight: 600;
+}
+.pcardRed p {
+    border-bottom: 2px solid var(--cor-s2);
+    padding-bottom: 12px;
+}
+.pcardRed h3 {
+    color: var(--cor-s5);
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+.pcardRed {
+    background-color: var(--cor-s1);
+}
+.pcardYellow {
+    background-color: var(--cor-t1);
+}
+
+.pcardYellow p {
+    border-bottom: 2px solid var(--cor-t3);
+    color: var(--cor-c8);
+    padding-bottom: 12px;
+}
+.pcardYellow h3 {
+    color: var(--cor-t5);
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+.btnBlue {
+    padding: 16px 34px;
+    background-color: var(--cor-p9);
+    border: none;
+    color: var(--cor-p2);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+    cursor: pointer;
+}
+.btnCenter {
+    text-align: center;
+    padding: 62px 0px
+}
+
+/*HIPERFOCO*/
+.hiperfoco {
+    background-color: var(--cor-p1);
+}
+.hiperfoco-container {
+    padding: 22px 52px;
+}
+.hiperfoco-container h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0.15px;
+    color: var(--cor-p8);
+    text-transform: uppercase;
+    padding: 36px;
+}
+.hiperfoco-container h3 {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.10px;
+    color: var(--cor-p8);
+    text-transform: uppercase;
+    padding-bottom: 24px;
+}
+.hiperfoco-container p {
+    font-size: 15px;
+    letter-spacing: .11px;
+    font-weight: 600;
+    color: var(--cor-c8);
+}
+
+.blueWave {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.blueWave img {
+    width: 100%;
+    border: transparent;
+    display: block;
+}
+
+/*faq*/
+.faq {
+    padding: 22px 52px;
+}
+.faq-container h2 {
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0.15px;
+    color: var(--cor-p8);
+    text-transform: uppercase;
+}
+.faq-container p {
+    font-size: 15px;
+    letter-spacing: .11px;
+    font-weight: 600;
+    color: var(--cor-c8);
+}
+.faq-boxs {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.fBox {
+    max-width: 1000px;
+    border: 2px solid var(--cor-p8);
+    padding: 12px;
+    cursor: pointer;
+}
+.fBox p {
+    font-size: 17px;
+    letter-spacing: 0.3px;
+}
+.answ {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: var(--cor-c9);
+}
+.unhidden {
+    display: none;
+}
+.duvidas {
+     padding: 22px 52px;
+}
+.cliqueDuvida {
+    color: var(--cor-p6);
+}
+.footer-cont {
+     padding: 22px 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-p1);
+}
+.footer-cont h4 {
+    font-size: 16px;
+    color: var(--cor-p4);
+}
+
+/*MOBILE*/
+.hamburguer {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0;
+    right: 10%;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    background-color: var(--cor-p9);
+    padding: 12px 30px;
+}
+.hamburguer::after {
+    content: 'MENU';
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+    color: var(--cor-p2);
+    font-size: 15px;
+    letter-spacing: 1.3px;
+}
+.hamburguer::before {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+    background-color: var(--cor-p2);
+}
+
+@media screen and (max-width: 980px) {
+    .nav-container {
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+    .hamburguer {
+        display: flex;
+        z-index: 999;
+        float: right;
+    }
+    .nav-ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        height: 100vh;
+        background-color: var(--cor-p1);
+        flex-direction: column;
+        padding: 100px 20px;
+        width: 100%;
+        max-width: 300px;
+        align-items: center;
+
+        transition: .5s ease;
+    }
+    .nav-ul a {
+        padding: 50px 100px;
+        text-transform: uppercase;
+        color: var(--cor-p8);
+        font-size: 17px;
+        letter-spacing: 0.20px;
+        transition: .3s;
+    }
+    .nav-ul a:hover {
+        background-color: var(--cor-p9);
+        color: var(--cor-p1);
+    }
+    .nav-ul.active2 {
+        right: 0;
+    }
+}
+@media(max-width: 600px) {
+    .nav-ul {
+        max-width: 200px;
+        padding: 50px 25px;
+    }
+    .nav-ul a  {
+        padding: 30px 50px;
+    }
+    .img-text {
+        padding: 0px;
+        margin: 14px;
+    }
+    .img-text h1 {
+        font-size: 36px;
+        letter-spacing: 0.25px;
+    }
+    .img-text p {
+        font-size: 16px;
+    }
+    .img-btns a {
+        padding: 20px;
+    }
+    /*Nossa clinica*/
+    .clinica-texto {
+        margin: 14px;
+    }
+    .clinica-texto h2 {
+        font-size: 25px;
+    }
+    .clinica-texto p {
+        font-size: 16px;
+        letter-spacing: -2.3%;
+    }
+    .clinica-cards {
+        grid-template-columns: 1fr;
+    }
+    /*Ajuda paciente*/
+    .paciente-text {
+        margin: 14px;
+        padding: 0px;
+    }
+    .paciente-cards {
+        flex-direction: column;
+        padding: 0px;
+    }
+    .p-card {
+        padding: 0px;
+        width: 400px;
+    }
+    .p-card p {
+        font-size: 14px;
+    }
+    .pcardRed {
+        width: 350px;
+    }
+    /*hiperfoco*/
+    .hiperfoco-container  {
+        padding: 0px;
+        margin: 14px;
+    }
+    .hiperfoco-container h2 {
+        font-size: 25px;
+        padding: 12px;
+    }
+    .hiperfoco-container p {
+        font-size: 14px;
+        letter-spacing: -2.3%;
+        padding: 0px;
+    }
+    /*faq*/
+    .faq {
+        padding: 0px;
+        margin: 14px;
+    }
+    .faq-container {
+        padding: 0px;
+    }
+    .fBox {
+        max-width: 400px;
+    }
+    .duvidas {
+        padding: 0px;
+        margin: 14px;
+    }
+}
+@media(max-width: 400px) {
+    .img-text {
+        padding-top: 40px;
+    }
+}

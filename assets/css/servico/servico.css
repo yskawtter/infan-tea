@@ -1,0 +1,123 @@
+.servicos {
+    padding-top: 32px;
+}
+.servicos div h2 {
+    color: var(--cor-p8);
+    font-size: 36px;
+    letter-spacing: 0.25px;
+    font-weight: normal;
+}
+.nossos-servicos {
+    padding: 90px 52px;
+    padding-bottom: 52px;
+}
+.nossos-servicos p {
+    color: var(--cor-c8);
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+}
+.blue-wave-svr {
+    width: 100%;
+    padding: 0px !important;
+}
+.servicos-cards {
+    background-color: var(--cor-p1);
+}
+.srvc{
+    padding: 0px 52px; /*ajeitar no negocio mobile*/
+}
+.blueWaveSrc img {
+    display: block;
+}
+
+.servicos-cards h2 {
+    text-align: center;
+}
+.svc-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 52px 0px;
+    background-color: var(--cor-p3);
+    border-radius: 0px 15px 15px 0px;
+}
+.svc-card h3 {
+    text-transform: uppercase;
+    color: var(--cor-p8);
+    font-size: 21px;
+    letter-spacing: 0.15px;
+    font-weight: 600;
+}
+.svc-card p {
+    font-size: 15px;
+    letter-spacing: 0.12px;
+    color: var(--cor-c1);
+}
+.svc-card-txt {
+    padding: 0px 32px;
+}
+.svc-card-esq-mobile {
+    display: none; /**/
+}
+.servicos-duvida {
+    padding: 40px 52px;
+}
+.servicos-duvida p {
+    color: var(--cor-c8);
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    padding-bottom: 32px;
+}
+.btnBlueC {
+    background-color: var(--cor-p3) !important;
+    color: var(--cor-p9);
+}
+/*MOBILE*/
+@media(max-width: 600px) {
+    .nossos-servicos, .servicos-duvida {
+        padding: 0;
+        margin: 14px;
+    }
+    .srvc {
+        padding: 0px;
+    }
+    .svc-card {
+        display: flex;
+        flex-direction: column;
+        margin: 14px;
+    }
+    .svc-card-txt {
+        padding: 0px;
+        margin: 14px;
+    }
+    .svc-card-esq {
+        display: none;
+    }
+    .svc-card-esq-mobile {
+        display: flex;
+    }
+    .svc-card img {
+        max-width: 100%;
+    }
+    .svc-card-txt h3 {
+        font-size: 17px;
+        letter-spacing: .15px;
+    }
+    .svc-card-txt p {
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: .8px;
+    }
+    .servicos-duvida {
+       padding: 0px;
+    }
+    .servicos-duvida a {
+        display: flex;
+        flex-direction: column;
+        margin: 14px 0px;
+    }
+    
+}
